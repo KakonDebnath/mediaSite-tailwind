@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-                tailwind.config = {
-                  theme: {
-                    extend: {
-                      colors: {
-                        clifford: '#da373d',
-                      }
-                    }
-                  }
-                }
-              </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color_primary: "#FECC02",
+            color_secondary: "#131313",
+            color_gray: "#4E4E4E",
+          },
+          fontFamily: {
+            font_primary: ["Bebas Neue", "cursive"],
+            font_secondary: ["Montserrat", "sans-serif"],
+          },
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-        
+
+<body class="w-100 max-w-[1440px] mx-auto">
+  <!-- header section -->
+  <header class="">
+    <nav class="md:flex items-center justify-between py-6 fixed left-0 top-0 right-0 md:px-5 lg:px-32 bg-white">
+      <h1 class="text-xl lg:text-3xl font-font_primary font-bold uppercase text-center">Mehendiganj Darpan</h1>
+      <ul class="md:flex items-center mt-3 md:mt-0">
+        <li class="px-5 py-3 rounded-lg transition-all hover:bg-color_primary font-font_primary text-lg font-semibold">
+          About US </li>
+        <li class="px-5 py-3 rounded-lg transition-all hover:bg-color_primary font-font_primary text-lg font-semibold">
+          Our Movies</li>
+        <li class="px-5 py-3 rounded-lg transition-all hover:bg-color_primary font-font_primary text-lg font-semibold">
+          Services</li>
+      </ul>
+    </nav>
+    <div class="">
+      <div class="flex items-center h-screen pt-24 bg-gray-700 pl-3 bg-[url('images/banner.jpg')] bg-cover">
+        <div class=" text-white space-y-3 w-1/2 px-32">
+          <p class="text-xl font-font_primary">Movie production studio</p>
+          <h1 class="text-7xl font-font_primary">Films MAde to <span class="text-color_primary">Perfection</span></h1>
+          <p class="font-font_secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <button class="font-font_primary py-3 px-5 ring-1 ring-white
+            text-xl">Discover More</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header Section End -->
+  <main>
+
+  </main>
 </body>
+
 </html>
