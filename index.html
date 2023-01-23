@@ -29,7 +29,7 @@
 <body class="w-100 max-w-[1440px] mx-auto text-color_secondary font-font_primary">
   <!-- header section -->
   <header class="">
-    <nav class="md:flex items-center justify-between py-6 fixed left-0 top-0 right-0 md:px-5 lg:px-32 bg-white">
+    <nav class="md:flex items-center justify-between py-6 fixed left-0 top-0 right-0 md:px-5 lg:px-32 bg-white z-10">
       <h1 class="text-xl lg:text-3xl font-font_primary font-bold uppercase text-center">Mehendiganj Darpan</h1>
       <ul class="md:flex items-center mt-3 md:mt-0">
         <li class="px-5 py-3 rounded-lg transition-all hover:bg-color_primary font-font_primary text-lg font-semibold">
@@ -44,7 +44,8 @@
       <div class="flex items-center h-screen pt-24 bg-gray-700 pl-3 bg-[url('images/banner.jpg')] bg-cover">
         <div class=" text-white space-y-3 lg:w-1/2 px-5 md:px-12 lg:px-32">
           <p class="text-xl font-font_primary">Movie production studio</p>
-          <h1 class="text-3xl md:text-5xl lg:text-7xl font-font_primary font-bold lg:font-normal">Films MAde to <span class="text-color_primary">Perfection</span></h1>
+          <h1 class="text-3xl md:text-5xl lg:text-7xl font-font_primary font-bold lg:font-normal">Films MAde to <span
+              class="text-color_primary">Perfection</span></h1>
           <p class="font-font_secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
             luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
           <button class="py-3 px-5 ring-1 ring-white
@@ -59,35 +60,123 @@
     <section class="md:px-5 lg:px-32 my-36 ">
       <div class="border-color_gray border-2 p-7">
         <div class=" md:flex justify-between gap-10 ">
-          <div class=" md:w-5/12 bg-red-300 md:bg-[url('images/camera-man.jpg')] bg-cover">
-          <img class="rounded md:hidden" src="images/camera-man.jpg" alt="">
+          <div class=" md:w-7/12 lg:w-5/12 bg-red-300 md:bg-[url('images/camera-man.jpg')] bg-center">
+            <img class="rounded md:hidden" src="images/camera-man.jpg" alt="">
           </div>
-          <div class="md:w-7/12 ">
-          <p class="font-bold mb-5">About Us</p>
-          <h1 class="text-6xl font-serif font-semibold md:mb-36">FIlming Experience Just Got better</h1>
-          <button class="font-bold py-3 px-5 ring-1 ring-black
-          text-xl mb-20">Discover More</button>
+          <div class="md:w-5/12 lg:w-7/12 ">
+            <p class="font-bold mb-5">About Us</p>
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-serif font-semibold md:mb-36">FIlming Experience Just Got
+              better</h1>
+            <button class="font-bold py-3 px-5 ring-1 ring-black
+          text-xl mb-20 mt-5">Discover More</button>
           </div>
         </div>
         <div class="md:flex items-center justify-between gap-20 md:mt-36">
           <div class="border-t-4 border-color_secondary p-3 ">
-            <h2 class="text-5xl font-font_secondary">OUR VISIOn</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-font_secondary">OUR VISIOn</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+              pulvinar dapibus leo.</p>
           </div>
           <div class="border-t-4 border-color_secondary p-3 ">
-            <h2 class="text-5xl font-font_secondary">OUR VISIOn</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-font_secondary">OUR VISIOn</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+              pulvinar dapibus leo.</p>
           </div>
           <div class="border-t-4 border-color_secondary p-3 ">
-            <h2 class="text-5xl font-font_secondary">OUR VISIOn</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-font_secondary">OUR VISIOn</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+              pulvinar dapibus leo.</p>
           </div>
+        </div>
       </div>
-    </div>
     </section>
     <!-- About Us Section end -->
-
+    <!-- Movie Section  -->
+    <section class="bg-color_gray text-white py-16">
+      <div class="md:px-5 lg:px-32">
+        <p class="font-bold mb-5">OUR MOVIES</p>
+        <div class="md:flex items-center justify-between">
+          <h1 class="text-3xl md:text-4xl lg:text-6xl font-serif font-semibold">Movie collection</h1>
+          <button class="font-bold py-3 px-5 ring-1 ring-white
+        text-xl ">Discover More</button>
+        </div>
+        <div class="md:flex justify-center items-center gap-4 mt-5">
+          <div class="p-3 border-2 border-white rounded">
+            <img class="rounded transition-all hover:scale-105" src="images/fractured.jpg" alt="">
+          </div>
+          <div class="p-3 border-2 border-white rounded">
+            <img class="rounded transition-all hover:scale-105" src="images/inception.jpg" alt="">
+          </div>
+          <div class="p-3 border-2 border-white rounded">
+            <img class="rounded transition-all hover:scale-105" src="images/interstellar.jpg" alt="">
+          </div>
+          <div class="p-3 border-2 border-white rounded">
+            <img class="rounded transition-all hover:scale-105" src="images/tenet.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Movie Section end -->
+    <!-- Service Section -->
+    <section class="md:px-5 lg:px-32 my-36 text-center">
+      <div>
+        <p class="font-bold mb-5">Services</p>
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-serif font-semibold mb-10">What We Offer</h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-5">
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/camera.png" alt="">
+          <h3 class="font-semibold text-xl">movies director</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/3d-glasss.png" alt="">
+          <h3 class="font-semibold text-xl">3D MOVIES</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/film.png" alt="">
+          <h3 class="font-semibold text-xl">Studio Production</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/count-down.png" alt="">
+          <h3 class="font-semibold text-xl">actor action</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/cut-board.png" alt="">
+          <h3 class="font-semibold text-xl">Movie Production</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/rim.png" alt="">
+          <h3 class="font-semibold text-xl">Rolling Production</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/theater.png" alt="">
+          <h3 class="font-semibold text-xl">Drama Movies</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+        <div class="border-2 border-gray-600 rounded p-2 space-y-3">
+          <img class="w-1/3 mx-auto" src="images/icons/director-chair.png" alt="">
+          <h3 class="font-semibold text-xl">Film maker</h3>
+          <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section  end-->
   </main>
+  <footer class="bg-[url('images/banner.jpg')] text-white text-center space-y-3 py-10">
+    <div>
+      <h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold mb-5">Mehendiganj Darpan</h1>
+      <h3>next level experience</h3>
+      <p>Feugiat nibh litora semper proin nullam facilisi 
+        volutpat ex ullamcorper.</p>
+        <p class="mt-10">Copyright &copy; 2020 Mehendiganj Darpan, All rights reserved. Present by Kakon Debnath</p>
+    </div>
+  </footer>
 </body>
 
 </html>
